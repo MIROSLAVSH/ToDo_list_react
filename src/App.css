@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	max-width: 520px;
+	background-color: white;
+	text-align: center;
+	margin: 90px auto;
+	border-radius: 10px;
+	padding-bottom: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+	margin: 32px 0;
+	font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo_form{
+	margin: 32px auto 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-add{
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px solid rgba(11, 131, 230, 0.9);
+	width: 70%;
+	background: transparent;
+	color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.input-edit{
+	padding: 10px;
+	margin: 0 5px 0 22px;
+	border-radius: 5px;
+	border: 2px solid rgba(11, 131, 230, 0.9);
+	width: 70%;
+	background: transparent;
+	color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: 2px solid rgba(11, 131, 230, 0.9);
+	cursor: pointer;
+	outline: none;
+	background: transparent;
+	color: black;
+}
+
+.icons{
+	display: flex;
+}
+
+.icon_delete{
+	color: rgba(255, 0, 0, 0.743);
+}
+
+
+.icon_delete,
+.icon_edit{
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.todo-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px auto 0 53px;
+	color: black;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid rgba(11, 131, 230, 0.9);
+	width: 70%;
+	cursor: pointer;
+}
+
+.todo-complete{
+	text-decoration: line-through;
+	opacity: 0.4;
+	align-items: center;
+	margin: 10px auto 0 53px;
+	color: black;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid rgba(11, 131, 230, 0.9);
+	width: 70%;
 }
