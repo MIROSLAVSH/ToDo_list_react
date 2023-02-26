@@ -2,7 +2,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: flex-start;
 	max-width: 520px;
 	background-color: white;
 	text-align: center;
@@ -78,28 +78,33 @@
 	padding: 10px;
 	border-radius: 5px;
 	border: 2px solid rgba(11, 131, 230, 0.9);
-	width: 70%;
+	max-width: 70%;
+	word-wrap: break-word;
 }
 
 .todo-container div{
 	cursor: pointer;
+	word-wrap: break-word;
 }
 
 .todo-complete{
 	position: relative;
+	display: flex;
 	text-decoration: line-through;
-	opacity: 0.4;
+	justify-content: space-between;
 	align-items: center;
 	margin: 10px auto 0 53px;
 	color: black;
 	padding: 10px;
 	border-radius: 5px;
 	border: 2px solid rgba(11, 131, 230, 0.9);
-	width: 70%;
+	max-width: 70%;
+	word-wrap: break-word;
+	opacity: 0.4;
 }
 
-.todo-complete .icons {
-	position: absolute;
-	right: 10px;
-   top: 7px
+.todo-complete div{
+	cursor: pointer;
+	word-wrap: break-word;
 }
+
