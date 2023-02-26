@@ -28,7 +28,7 @@ const Todo = () => {
 
   return (
 	 <div>
-		<h1 className="header">Add your to do list here</h1>
+		<h1 className="header">Add your ToDo list here</h1>
 		<TodoForm 
 			onSubmit={addTodo}
 		/>
